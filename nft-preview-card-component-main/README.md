@@ -53,6 +53,6 @@ Hovering over a parent element to trigger a child element. This was applied when
 ## Author
 
 - Twitter - [@i_jollof](https://www.twitter.com/i_jollof)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@guytito](https://www.frontendmentor.io/profile/GuyTito)
 
 
