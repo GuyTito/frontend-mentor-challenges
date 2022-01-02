@@ -13,26 +13,38 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body class="bg-pale-blue">
+  <img src="./images/pattern-background-desktop.svg" alt="" class="hidden xs:block absolute" >
+  <img src="./images/pattern-background-mobile.svg" alt="" class="xs:hidden absolute">
 
-  Order Summary
+  <h1 class="my-7 text-dark-blue text-xl uppercase  text-center font-black px-3 relative">Order Summary Card Component</h1>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+  <main class="font-red-hat max-w-[310px] sm:max-w-sm mx-auto bg-white rounded-xl text-[16px] overflow-hidden relative">
+    <div>
+      <img src="./images/illustration-hero.svg" alt="">
+    </div>
+    <div class="space-y-5 py-7 px-5">
+      <h4 class="text-center font-black text-xl text-dark-blue">Order Summary</h4>
+      <p class="text-center text-desaturated-blue">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+      </p>
+      <div class="flex bg-very-pale-blue p-4 rounded-xl items-center justify-between">
+        <img src="./images/icon-music.svg" alt="music icon">
+        <div class="flex flex-col">
+          <span class="font-bold text-dark-blue">Annual Plan</span>
+          <span class="text-desaturated-blue">$59.99/year</span>
+        </div>
+        <a href="#" class="underline text-bright-blue hover:text-opacity-70">Change</a>
+      </div>
+      <button class="rounded-xl block text-white bg-bright-blue hover:bg-opacity-70 w-full py-3 shadow-xl">Proceed to Payment</button>
+      <button class="text-desaturated-blue hover:text-dark-blue font-bold w-full block ">Cancel Order</button>
+    </div>
+  </main>
   
-  <div class="attribution">
+  <footer class="attribution mt-10 mb-2">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/GuyTito">Kofi Jollof</a>.
+  </footer>
 </body>
 </html>
