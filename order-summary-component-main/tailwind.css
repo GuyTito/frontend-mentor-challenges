@@ -3,3 +3,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+  @media (min-width: 376px) {
+    .bg-pattern {
+      background-image: url(./images/pattern-background-desktop.svg);
+      background-repeat: no-repeat;
+    }
+  }
+  @media (max-width: 376px) {
+    .bg-pattern {
+      background-image: url(./images/pattern-background-mobile.svg);
+      background-repeat: no-repeat;
+    }
+  }
+}
