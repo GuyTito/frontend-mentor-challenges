@@ -13,21 +13,41 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-very-dark-blue">
+  <header class="uppercase text-center my-10 text-white font-bold text-xl">Stats preview card component</header>
 
-  Get insights that help your business grow.
+  <main class="text-white bg-dark-desaturated-blue max-w-[250px] mx-auto md:max-w-3xl text-center md:text-left rounded-md overflow-hidden md:flex flex-row-reverse">
+    <div class="relative md:w-1/2">
+      <img src="./images/image-header-mobile.jpg" alt="hero" class="md:hidden">
+      <img src="./images/image-header-desktop.jpg" alt="hero" class="hidden md:block w-full h-full object-cover">
+      <div class="absolute bg-soft-violet/50 w-full h-full inset-0"></div>
+    </div>
+    <div class="p-6 md:p-12 md:w-1/2">
+      <h1 class="font-bold text-xl font-inter mb-4 md:mb-8">Get <span class="text-soft-violet">insights</span> that help your business grow.</h1>
+      <p class="font-lexend text-xs text-white/75 leading-relaxed tracking-wider mb-6 md:mb-10">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
+      </p>
+      <div class=" md:flex md:justify-between">
+        <div class="mb-5 md:mb-0"> 
+          <div class="text-white text-lg font-inter font-bold">10k+</div>
+          <div class="uppercase font-lexend text-[8px] tracking-widest text-white/60">companies</div>
+        </div>
+        <div class="mb-5 md:mb-0">
+          <div class="text-white text-lg font-inter font-bold">314</div>
+          <div class="uppercase font-lexend text-[8px] tracking-widest text-white/60">templates</div>
+        </div>
+        <div>
+          <div class="text-white text-lg font-inter font-bold">12M+</div>
+          <div class="uppercase font-lexend text-[8px] tracking-widest text-white/60">queries</div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
+  <footer class="attribution text-white mt-16">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/GuyTito">Kofi Jollof</a>.
+  </footer>
 </body>
 </html>
