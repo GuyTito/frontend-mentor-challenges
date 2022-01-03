@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
 /*
 ! tailwindcss v3.0.8 | MIT License | https://tailwindcss.com
 */
@@ -423,6 +425,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.grow {
+.grow{
   flex-grow: 1;
 }
