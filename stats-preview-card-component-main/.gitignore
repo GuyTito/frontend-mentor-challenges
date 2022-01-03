@@ -16,6 +16,6 @@
 .prettierignore
 
 node_modules
-notes.text
+notes.txt
 package.json
 package-lock.json
