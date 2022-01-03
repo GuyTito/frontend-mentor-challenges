@@ -1,0 +1,18 @@
+To have tailwindcss intellisense,
+	npm init -y
+	npm install -D tailwindcss
+
+
+run ff command with internet access
+	npx tailwindcss -i ./tailwind.css -o ./style.css -w -m
+
+
+open with Live Server VSCode extension for real-time development 
+OR 
+open index.html file with Chrome (make sure src and href paths are correctly linked to respective files. Done by preceding with "./")
+
+
+Ignore node modules, package.json, package-lock.json, notes.txt, (to store on GitHub) and tailwind.css to deploy.
+
+NB: run ff command to get tailwind help info
+	npx tailwindcss -h
