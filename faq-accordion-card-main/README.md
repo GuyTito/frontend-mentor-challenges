@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-  [Solution](https://www.frontendmentor.io/solutions/responsive-faq-accordion-card-using-tailwindcss-and-alpine-js-A9QUfGiXi)
+-  [Live Site](https://faq-fm.netlify.app/)
 
 ## My process
 
