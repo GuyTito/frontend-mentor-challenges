@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | FAQ Accordion Card</title>
+  <script src="./alpine.js" defer></script>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -15,12 +16,60 @@
   </style>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-  
+<body class="font-kumbh bg-gradient-to-b from-soft-violet to-soft-blue bg-no-repeat bg-cover bg-fixed text-sm">
+  <main x-data="accordion()" class="bg-white px-5 pb-10 max-w-sm mx-auto rounded-xl text-dark-grayish-blue">
+    <div></div>
+    <div>
+      <h1 class="text-center text-very-dark-grayish-blue text-2xl font-bold mb-8">FAQ</h1>
+      <template x-for="faq in faqs" :key="faq">
+        <div>
+          <div @click="faq.is_open = !faq.is_open" class="flex justify-between items-center mb-3 cursor-pointer">
+            <h2 class="text-very-dark-grayish-blue" :class="{'font-bold': faq.is_open}" x-text="faq.question"></h2>
+            <div><img src="./images/icon-arrow-down.svg" alt=""></div>
+          </div>
+          <p x-show="faq.is_open" x-text="faq.answer"></p>
+        </div>
+      </template>
+    </div>
+  </main>
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script>
+    function accordion() {
+      return {
+        open: false,
+        faqs: [
+          {
+            question: "How many team members can I invite?",
+            answer: "You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.",
+            is_open: false,
+          },
+          {
+            question: "What is the maximum file upload size?",
+            answer: "No more than 2GB. All files in your account must fit your allotted storage space.",
+            is_open: false,
+          },
+          {
+            question: "How do I reset my password?",
+            answer: "Click “Forgot password” from the login page or “Change password” from your profile page.A reset link will be emailed to you.",
+            is_open: false,
+          },
+          {
+            question: "Can I cancel my subscription?",
+            answer: "Yes! Send us a message and we’ll process your request no questions asked.",
+            is_open: false,
+          },
+          {
+            question: "Do you provide additional support?",
+            answer: "Chat and email support is available 24/7. Phone lines are open during normal business hours.",
+            is_open: false,
+          },
+        ],
+      }
+    }
+  </script>
 </body>
 </html>
