@@ -424,3 +424,37 @@ Ensure the default browser behavior of the `hidden` attribute.
 [hidden] {
   display: none;
 }
+
+.bg-red-primary{
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 100% 74% / var(--tw-bg-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.\[background-image\:url\(\.\/images\/bg-intro-mobile\.png\)\]{
+  background-image: url(./images/bg-intro-mobile.png);
+}
+
+@media (min-width: 768px){
+  .md\:\[background-image\:url\(\.\/images\/bg-intro-deskop\.png\)\]{
+    background-image: url(./images/bg-intro-deskop.png);
+  }
+
+  .md\:\[background-image\:url\(\.\/images\/bg-intro-desktop\.png\)\]{
+    background-image: url(./images/bg-intro-desktop.png);
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:\[background-image\:url\(\.\/images\/bg-intro-desktop\.png\)\]{
+    background-image: url(./images/bg-intro-desktop.png);
+  }
+
+  .lg\:\[background-image\:url\(\.\/images\/bg-intro-deskop\.png\)\]{
+    background-image: url(./images/bg-intro-deskop.png);
+  }
+}
