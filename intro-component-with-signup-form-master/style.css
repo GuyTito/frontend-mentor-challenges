@@ -443,21 +443,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-}
-
-.input-style::-moz-placeholder{
-  --tw-text-opacity: 1;
-  color: hsl(249 10% 26% / var(--tw-text-opacity));
-}
-
-.input-style:-ms-input-placeholder{
-  --tw-text-opacity: 1;
-  color: hsl(249 10% 26% / var(--tw-text-opacity));
-}
-
-.input-style::placeholder{
-  --tw-text-opacity: 1;
-  color: hsl(249 10% 26% / var(--tw-text-opacity));
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .input-style:focus{
@@ -506,8 +493,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
-.max-w-\[250px\]{
-  max-width: 250px;
+.max-w-\[300px\]{
+  max-width: 300px;
 }
 
 .items-center{
@@ -561,8 +548,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: 'Poppins', sans-serif;
 }
 
-.text-\[16px\]{
-  font-size: 16px;
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl{
@@ -649,6 +637,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:px-6{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .md\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .md\:text-left{

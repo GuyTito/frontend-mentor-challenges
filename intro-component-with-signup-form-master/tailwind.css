@@ -6,7 +6,7 @@
 
 @layer components{
   .input-style{
-    @apply py-2 px-5 rounded focus:outline-none border focus:border-dark-blue placeholder:text-dark-blue w-full mb-3
+    @apply py-2 px-5 rounded focus:outline-none border focus:border-dark-blue w-full mb-3 text-xs
   }
   .submit-style{
     @apply py-2 px-5 rounded w-full mb-3 bg-green-primary text-white uppercase shadow-[0_2px_green]
