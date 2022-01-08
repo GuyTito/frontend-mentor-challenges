@@ -522,16 +522,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
-.mt-20{
-  margin-top: 5rem;
-}
-
 .flex{
   display: flex;
 }
 
 .hidden{
   display: none;
+}
+
+.min-h-screen{
+  min-height: 100vh;
 }
 
 .max-w-\[300px\]{
@@ -544,6 +544,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .items-center{
   align-items: center;
+}
+
+.justify-between{
+  justify-content: space-between;
 }
 
 .overflow-auto{
