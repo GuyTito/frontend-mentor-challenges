@@ -15,38 +15,44 @@
   </style>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body class="bg-red-primary text-white font-poppins 
-[background-image:url(./images/bg-intro-mobile.png)] 
-md:[background-image:url(./images/bg-intro-desktop.png)]">
-  <main class="text-[16px]">
-    <div class="text-center">
-      <h1 class="font-bold ">Learn to code by watching others</h1>
+<body class="
+  bg-red-primary text-white font-poppins 
+  [background-image:url(./images/bg-intro-mobile.png)] 
+  md:[background-image:url(./images/bg-intro-desktop.png)]"
+>
+  <main class="text-[16px] mt-20 max-w-[250px] mx-auto md:max-w-5xl md:flex items-center">
+    <div class="text-center md:text-left mb-10 md:w-1/2 md:max-w-md md:ml-16">
+      <h1 class="font-bold text-xl md:text-3xl mb-5 md:max-w-sm">Learn to code by watching others</h1>
     
-      <p class="">
+      <p class="leading-relaxed md:text-sm text-gray-200">
         See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
         but understanding how developers think is invaluable
-      </p>.
+      </p>
     </div> 
   
-    <div class="">
-      <div class="bg-blue-accent text-center py-3 rounded-md mb-5">Try it free 7 days then $20/mo. thereafter</div>
+    <div class="md:w-1/2 md:max-w-sm mx-auto">
+      <div class="bg-blue-accent text-center py-3 rounded-md mb-5 shadow-y-7 px-5">
+        Try it free 7 days <span class="text-grayish-blue">then $20/mo. thereafter</span>
+      </div>
     
-      <form class="bg-white text-dark-blue rounded-md py-3 px-4 md:px-6">
-        <input type="text" name="first_name" required placeholder="First Name" class="py-2 px-5 rounded focus:outline-none border focus:border-dark-blue placeholder:text-dark-blue w-full mb-3">
-        <input type="text" name="last_name" required placeholder="Last Name" class="py-2 px-5 rounded focus:outline-none border focus:border-dark-blue placeholder:text-dark-blue w-full mb-3">
-        <input type="email" name="email" required placeholder="Email Address" class="py-2 px-5 rounded focus:outline-none border focus:border-dark-blue placeholder:text-dark-blue w-full mb-3">
-        <input type="password" name="password" required placeholder="Password" class="py-2 px-5 rounded focus:outline-none border focus:border-dark-blue placeholder:text-dark-blue w-full mb-3">
-        <input type="submit" value="claim yout free tiral" class="py-2 px-5 rounded w-full mb-3 bg-green-primary text-white uppercase shadow-lg">
+      <form class="bg-white text-dark-blue rounded-md py-3 px-4 md:px-6 shadow-y-7">
+        <input type="text" name="first_name" required placeholder="First Name" class="input-style">
+        <input type="text" name="last_name" required placeholder="Last Name" class="input-style">
+        <input type="email" name="email" required placeholder="Email Address" class="input-style">
+        <input type="password" name="password" required placeholder="Password" class="input-style">
+        <input type="submit" value="claim yout free tiral" class="submit-style">
             
-        <div class="text-xs text-center text-grayish-blue">By clicking the button, you are agreeing to our <a href="#" class="text-red-primary font-semibold">Terms and Services</a></div>
+        <div class="text-[10px] text-center mb-2 text-grayish-blue px-3">
+          By clicking the button, you are agreeing to our <a href="#" class="text-red-primary font-semibold">Terms and Services</a>
+        </div>
       </form>
     </div>
   </main>
   
-  <footer>
+  <footer class="mt-20 mb-2">
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/GuyTito">Kofi Jollof</a>.
     </p>
   </footer>
 </body>
