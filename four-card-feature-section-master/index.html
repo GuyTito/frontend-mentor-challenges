@@ -15,31 +15,54 @@
   </style>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body class="bg-very-light-gray flex flex-col min-h-screen justify-between">
   
-  Reliable, efficient delivery
-  Powered by Technology
+  <main class="font-poppins text-[15px] max-w-xs md:max-w-5xl mx-auto text-grayish-blue mt-10">
+    <div class="text-center mb-20">
+      <h1 class="flex flex-col mb-5 text-2xl text-very-dark-blue">
+        <span class="text-grayish-blue">Reliable, efficient delivery</span>
+        <span class="font-semibold">Powered by Technology</span>
+      </h1>
+    
+      <p class="md:max-w-lg mx-auto">
+        Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
+      </p>
+    </div>
+  
+    <div class="space-y-10 md:space-y-0 md:grid grid-cols-3 md:gap-10 md:items-center">
+      <div class="bg-white p-5 border-t-4 border-t-cyan-primary rounded shadow-2xl">
+        <h2 class="font-semibold text-xl mb-3 text-very-dark-blue">Supervisor</h2>
+        <p>Monitors activity to identify project roadblocks</p>
+        <div class="flex justify-end mt-8"><img src="./images/icon-supervisor.svg" alt="Supervisor"></div>
+      </div>
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
+      <div class="space-y-10">
+        <div class="bg-white p-5 border-t-4 border-t-red-primary rounded shadow-2xl">
+          <h2 class="font-semibold text-xl mb-3 text-very-dark-blue">Team Builder</h2>
+          <p>Scans our talent network to create the optimal team for your project</p>
+          <div class="flex justify-end mt-8"><img src="./images/icon-team-builder.svg" alt="Team Builder"></div>
+        </div>
+  
+        <div class="bg-white p-5 border-t-4 border-t-orange-primary rounded shadow-2xl">
+          <h2 class="font-semibold text-xl mb-3 text-very-dark-blue">Karma</h2>
+          <p>Regularly evaluates our talent to ensure quality</p>
+          <div class="flex justify-end mt-8"><img src="./images/icon-karma.svg" alt="Karma"></div>
+        </div>
+      </div>
 
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
+      <div class="bg-white p-5 border-t-4 border-t-blue-primary rounded shadow-2xl">
+        <h2 class="font-semibold text-xl mb-3 text-very-dark-blue">Calculator</h2>
+        <p>Uses data from past projects to provide better delivery estimates</p>
+        <div class="flex justify-end mt-8"><img src="./images/icon-calculator.svg" alt="Calculator"></div>
+      </div>
+    </div>
+  </main>
 
   
-  <footer>
+  <footer class="mt-20 mb-2">
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/GuyTito">Kofi Jollof</a>
     </p>
   </footer>
 </body>
