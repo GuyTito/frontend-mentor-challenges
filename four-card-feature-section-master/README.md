@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://your-solution-url.com)
-- [Live Site](https://your-live-site-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/responsive-four-card-section-using-css-grid-and-tailwindcss-6mlTnhvjd)
+- [Live Site](https://four-card-fm.netlify.app/)
 
 ## My process
 
