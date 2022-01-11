@@ -3,3 +3,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+  [type='number']{
+    @apply border-0 focus:ring-0
+  }
+  [type='radio']{
+    @apply py-[22px] rounded border-0 bg-Very-dark-cyan text-Strong-cyan focus:ring-0 w-full hover:bg-Light-grayish-cyan-1
+  }
+  [type='radio']:checked{
+    @apply bg-none ring-0 border-0 hover:bg-Light-grayish-cyan-1
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+}
+
+@layer components{
+  .number-input{
+    @apply text-right bg-Light-grayish-cyan-2 w-full rounded font-bold text-Very-dark-cyan border-2 border-transparent focus:border-Strong-cyan cursor-pointer hover:border-Strong-cyan 
+  }
+  .radio-text{
+    @apply text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer font-bold peer-checked:text-Very-dark-cyan peer-hover:text-Very-dark-cyan
+  }
+}
