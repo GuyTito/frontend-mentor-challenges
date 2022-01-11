@@ -1,15 +1,15 @@
 setup Frontend Mentor project
 ------------------------------
 
-init a challenge
-update gitignore with ff
-   node_modules
-   notes.txt
-   package.json
-   package-lock.json
-merge with main
-copy tailwind starter files into challenge project
-follow steps in notes.txt to setup tailwindcss
-implement style guide
-check up designs
-code
+- init a challenge
+- update gitignore with ff
+node_modules
+notes.txt
+package.json
+package-lock.json
+- merge with main
+- copy tailwind starter files into challenge project
+- follow steps in notes.txt to setup tailwindcss
+- implement style guide
+- check up designs
+- code
