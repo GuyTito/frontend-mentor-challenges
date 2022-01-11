@@ -15,27 +15,61 @@
   </style>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body class="bg-Light-grayish-cyan-1 font-space-mono ">
 
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
+  <form class="bg-white max-w-xs mx-auto rounded-lg p-5">
+    <div class="">
+      <div class="space-y-1 mb-8">
+        <label for="bill">Bill</label>
+        <div class="relative">
+          <input type="number" id="bill" placeholder="0" class="text-right bg-Light-grayish-cyan-2 w-full rounded text-2xl font-bold text-Very-dark-cyan py-1">
+          <img src="./images/icon-dollar.svg" alt="a dollar icon" class="absolute top-3 left-3">
+        </div>
+      </div>
+    
+      <div class="">
+        <div class="">
+          <div>Select Tip %</div>
+          <div class="">
+            <input type="radio" id="" class="">
+            5%
+            10%
+            15%
+            25%
+            50%
+            Custom
+          </div>
+        </div>
+      
+        <div class="space-y-1 mb-8">
+          <label for="people">Number of People</label>
+          <div class="relative">
+            <input type="number" id="people" placeholder="0" class="text-right bg-Light-grayish-cyan-2 w-full rounded text-2xl font-bold text-Very-dark-cyan py-1">
+            <img src="./images/icon-person.svg" alt="a person icon" class="absolute top-3 left-3">
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="bg-Very-dark-cyan text-white rounded-lg px-5 pt-8 pb-5 space-y-5">
+      <div class="flex justify-between items-center">
+        <div class="flex flex-col">
+          <span>Tip Amount</span>
+          <span class="text-xs text-Dark-grayish-cyan-2">/ person</span>
+        </div>
+        <div class="text-2xl text-Strong-cyan font-bold">$4.27</div>
+      </div>
+      <div class="flex justify-between items-center">
+        <div class="flex flex-col">
+          <span>Total</span>
+          <span class="text-xs text-Dark-grayish-cyan-2">/ person</span>
+        </div>
+        <div class="text-2xl text-Strong-cyan font-bold">$4.27</div>
+      </div>
+    
+      <button class="bg-Strong-cyan p-2 w-full rounded uppercase text-Very-dark-cyan font-bold">Reset</button>
+    </div>
+  </form>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
