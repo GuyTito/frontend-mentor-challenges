@@ -19,7 +19,7 @@
 
 @layer components{
   .number-input{
-    @apply text-right bg-Light-grayish-cyan-2 w-full rounded font-bold text-Very-dark-cyan border-2 border-transparent px-3 py-2 focus:border-Strong-cyan cursor-pointer hover:border-Strong-cyan focus:outline-none 
+    @apply text-right bg-Light-grayish-cyan-2 w-full rounded font-bold text-Very-dark-cyan border-2 border-transparent px-3 py-1 focus:border-Strong-cyan cursor-pointer hover:border-Strong-cyan focus:outline-none 
   }
   .tip-btn{
     @apply w-full bg-Very-dark-cyan rounded text-white py-2 font-bold hover:text-Very-dark-cyan  hover:bg-Light-grayish-cyan-1
