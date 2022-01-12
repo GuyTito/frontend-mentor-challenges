@@ -30,29 +30,12 @@
         <div class="space-y-2">
           <div>Select Tip %</div>
           <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
-            <label class="block relative group">
-              <span class="radio-text group-hover:text-Very-dark-cyan peer">5%</span>
-              <input type="radio" id="" name="tip" class="cursor-pointer  hover:bg-Light-grayish-cyan-1 peer peer-hover:bg-Light-grayish-cyan-1" value="5">
-            </label>
-            <label class="block relative group">
-              <input type="radio" id="" name="tip" class="cursor-pointer peer" value="10">
-              <span class="radio-text">10%</span>
-            </label>
-            <label class="block relative group">
-              <input type="radio" id="" name="tip" class="cursor-pointer peer" value="15">
-              <span class="radio-text">15%</span>
-            </label>
-            <label class="block relative group">
-              <input type="radio" id="" name="tip" class="cursor-pointer peer" value="25">
-              <span class="radio-text">25%</span>
-            </label>
-            <label class="block relative group">
-              <input type="radio" id="" name="tip" class="cursor-pointer peer" value="50">
-              <span class="radio-text">50%</span>
-            </label>
-            <label class="block relative group">
-              <input type="number" id="custom_tip" placeholder="Custom" class="number-input">
-            </label>
+            <button value="5" class="tip-btn">5%</button>
+            <button value="10" class="tip-btn">10%</button>
+            <button value="15" class="tip-btn">15%</button>
+            <button value="25" class="tip-btn">25%</button>
+            <button value="50" class="tip-btn">50%</button>
+            <input type="number" name="tip-btn" id="" placeholder="Custom" class="number-input">
           </div>
         </div>
       
@@ -94,7 +77,12 @@
 
   <script>
     const form = document.querySelector('form')
+    const tip_btn = document.querySelector('.tip-btn')
 
+    tip_btn.addEventListener('click', e => {
+      tip_btn.classList.toggle('chosen-tip')
+      console.log({tip_btn: tip_btn.value})
+    })
     form.addEventListener('submit', e => {
       e.preventDefault()
       
