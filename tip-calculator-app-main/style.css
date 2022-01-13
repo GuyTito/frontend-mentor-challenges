@@ -538,6 +538,23 @@ div .tip-btn.chosen-tip{
   color: hsl(183 100% 15% / var(--tw-text-opacity));
 }
 
+.reset-btn{
+  width: 100%;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: hsl(172 67% 45% / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: hsl(183 100% 15% / var(--tw-text-opacity));
+}
+
+.reset-btn:hover{
+  --tw-bg-opacity: 1;
+  background-color: hsl(185 41% 84% / var(--tw-bg-opacity));
+}
+
 .absolute{
   position: absolute;
 }
@@ -554,6 +571,11 @@ div .tip-btn.chosen-tip{
   left: 0.75rem;
 }
 
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -561,6 +583,14 @@ div .tip-btn.chosen-tip{
 
 .mb-8{
   margin-bottom: 2rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 
 .flex{
@@ -571,8 +601,12 @@ div .tip-btn.chosen-tip{
   display: grid;
 }
 
-.w-full{
-  width: 100%;
+.hidden{
+  display: none;
+}
+
+.min-h-screen{
+  min-height: 100vh;
 }
 
 .max-w-xs{
@@ -590,6 +624,10 @@ div .tip-btn.chosen-tip{
 
 .flex-col{
   flex-direction: column;
+}
+
+.place-items-center{
+  place-items: center;
 }
 
 .items-center{
@@ -632,8 +670,9 @@ div .tip-btn.chosen-tip{
   border-radius: 0.5rem;
 }
 
-.rounded{
-  border-radius: 0.25rem;
+.border-red-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 .bg-Light-grayish-cyan-1{
@@ -651,17 +690,8 @@ div .tip-btn.chosen-tip{
   background-color: hsl(183 100% 15% / var(--tw-bg-opacity));
 }
 
-.bg-Strong-cyan{
-  --tw-bg-opacity: 1;
-  background-color: hsl(172 67% 45% / var(--tw-bg-opacity));
-}
-
 .p-5{
   padding: 1.25rem;
-}
-
-.p-2{
-  padding: 0.5rem;
 }
 
 .px-5{
@@ -675,6 +705,10 @@ div .tip-btn.chosen-tip{
 
 .pb-5{
   padding-bottom: 1.25rem;
+}
+
+.text-right{
+  text-align: right;
 }
 
 .font-space-mono{
@@ -699,6 +733,24 @@ div .tip-btn.chosen-tip{
   text-transform: uppercase;
 }
 
+.leading-loose{
+  line-height: 2;
+}
+
+.tracking-\[0\.5em\]{
+  letter-spacing: 0.5em;
+}
+
+.text-Very-dark-cyan{
+  --tw-text-opacity: 1;
+  color: hsl(183 100% 15% / var(--tw-text-opacity));
+}
+
+.text-red-500{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -714,14 +766,18 @@ div .tip-btn.chosen-tip{
   color: hsl(172 67% 45% / var(--tw-text-opacity));
 }
 
-.text-Very-dark-cyan{
-  --tw-text-opacity: 1;
-  color: hsl(183 100% 15% / var(--tw-text-opacity));
+.transition{
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
-.hover\:bg-Light-grayish-cyan-1:hover{
-  --tw-bg-opacity: 1;
-  background-color: hsl(185 41% 84% / var(--tw-bg-opacity));
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 @media (min-width: 768px){
@@ -743,6 +799,10 @@ div .tip-btn.chosen-tip{
 
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
   }
 
   .md\:justify-between{

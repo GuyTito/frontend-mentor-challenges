@@ -28,5 +28,8 @@
   div .tip-btn.chosen-tip{
     @apply bg-Strong-cyan text-Very-dark-cyan
   }
+  .reset-btn{
+    @apply bg-Strong-cyan p-2 w-full rounded uppercase text-Very-dark-cyan font-bold hover:bg-Light-grayish-cyan-1
+  }
 }
 
