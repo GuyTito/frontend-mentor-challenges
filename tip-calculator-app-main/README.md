@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-  [Solution](https://www.frontendmentor.io/solutions/responsive-tip-calculator-using-flexbox-css-grid-and-javascript-QtH1c0VMm)
+-  [Live Site](https://tip-calculator-fm.netlify.app/)
 
 ## My process
 
