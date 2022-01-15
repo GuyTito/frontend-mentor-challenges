@@ -15,16 +15,34 @@
   </style>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-  <header class="">
-    <nav>
-      About
-      Services
-      Projects
-      Contact
+<body class="text-lg">
+  <header class="[background-image:url(./images/mobile/image-header.jpg)] bg-center bg-cover bg-no-repeat pb-32">
+    <nav class="mx-5 pt-8 flex justify-between">
+      <div>
+        <a href="#">
+          <img src="./images/logo.svg" alt="logo">
+        </a>
+      </div>
+
+      <ul class="hidden">
+        <li>About</li>
+        <li>Services</li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
+
+      <button>
+        <img src="./images/icon-hamburger.svg" alt="a hamburger icon">
+      </button>
     </nav>
   
-    <h1>We are creatives</h1>
+    <div class="grid place-items-center">
+      <h1 class="text-white uppercase font-Fraunces font-black text-center flex flex-col tracking-[0.3em] leading-normal text-2xl mt-20 mb-16 ">
+        <span>We are</span>
+        <span>creatives</span>
+      </h1>
+      <img src="./images/icon-arrow-down.svg" alt="an arrow pointing down">
+    </div>
   </header>
 
   <section class="">

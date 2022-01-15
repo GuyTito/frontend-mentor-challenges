@@ -470,6 +470,126 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.mx-5{
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
+}
+
+.mb-14{
+  margin-bottom: 3.5rem;
+}
+
+.mb-16{
+  margin-bottom: 4rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.grid{
+  display: grid;
+}
+
+.hidden{
+  display: none;
+}
+
 .grow{
   flex-grow: 1;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.place-items-center{
+  place-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-contain{
+  background-size: contain;
+}
+
+.bg-center{
+  background-position: center;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
+
+.pb-32{
+  padding-bottom: 8rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.font-Fraunces{
+  font-family: 'Fraunces', serif;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-black{
+  font-weight: 900;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.leading-normal{
+  line-height: 1.5;
+}
+
+.tracking-\[0\.3em\]{
+  letter-spacing: 0.3em;
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.\[background-image\:url\(\.\/images\/mobile\/image-header\.jpg\)\]{
+  background-image: url(./images/mobile/image-header.jpg);
 }
