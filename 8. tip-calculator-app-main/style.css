@@ -585,12 +585,28 @@ div .tip-btn.chosen-tip{
   margin-bottom: 2rem;
 }
 
-.mt-20{
-  margin-top: 5rem;
+.mt-16{
+  margin-top: 4rem;
 }
 
 .mb-2{
   margin-bottom: 0.5rem;
+}
+
+.mt-14{
+  margin-top: 3.5rem;
+}
+
+.mt-12{
+  margin-top: 3rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
 }
 
 .flex{
@@ -668,11 +684,6 @@ div .tip-btn.chosen-tip{
 
 .rounded-lg{
   border-radius: 0.5rem;
-}
-
-.border-red-500{
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 .bg-Light-grayish-cyan-1{
