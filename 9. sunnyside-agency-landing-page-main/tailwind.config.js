@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: ["./*.html",],
   theme: {
@@ -14,8 +16,8 @@ module.exports = {
         "Grayish-blue": "hsl(210, 4%, 67%)",
       },
       fontFamily: {
-        "Barlow": "'Barlow', sans-serif",
-        "Fraunces": "'Fraunces', serif",
+        serif: ["'Fraunces'", ...defaultTheme.fontFamily.serif],
+        sans: ["'Barlow'", ...defaultTheme.fontFamily.sans],
       },
     },
   },
