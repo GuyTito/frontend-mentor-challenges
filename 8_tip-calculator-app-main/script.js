@@ -7,12 +7,16 @@ people_input.addEventListener('keyup', e => {
   calculateTip(people_input)
 })
 
-function selectTip(e = null) {
-  let tips = document.getElementsByClassName("tip");
+const tips = document.getElementsByClassName("tip")
+function deselectTips() {
   for (i = 0; i < tips.length; i++) {
-    tips[i].className = tips[i].className.replace(" chosen-tip", "");
+    tips[i].className = tips[i].className.replace(" chosen-tip", "")
   }
-  if (e != null) e.currentTarget.className += " chosen-tip"
+}
+
+function selectTip(e) {
+  deselectTips()
+  e.currentTarget.className += " chosen-tip"
 }
 
 const tip_btns = document.querySelectorAll(".tip-btn")
@@ -72,7 +76,7 @@ function calculateTip(input=null) {
 const reset_btn = document.querySelector('.reset-btn')
 reset_btn.addEventListener('click', e => {
   bill_input.value = ''
-  selectTip()
+  deselectTips()
   custom_tip.value = ''
   people_input.value = ''
   tip_per_person_div.innerHTML = '$0.00'
