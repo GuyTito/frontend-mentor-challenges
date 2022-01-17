@@ -3,7 +3,7 @@ const people_input = document.querySelector('#people')
 bill_input.addEventListener('keyup', e => {
   calculateTip()
 })
-people_input.addEventListener('keyup', e => {
+people_input.addEventListener('input', e => {
   calculateTip(people_input)
 })
 
@@ -24,16 +24,28 @@ const custom_tip = document.querySelector('.custom-tip')
 var tip_percent = 0
 tip_btns.forEach((tip_btn) => {
   tip_btn.addEventListener("click", e => {
+    e.preventDefault()
     selectTip(e)
     custom_tip.value = ''
     tip_percent = parseFloat(tip_btn.value) / 100
     calculateTip()
+  });
+  tip_btn.addEventListener("keyup", e => {
+    if (e.keyCode == 13) {
+      selectTip(e)
+      custom_tip.value = ''
+      tip_percent = parseFloat(tip_btn.value) / 100
+      calculateTip()
+    }
   });
 });
 
 
 custom_tip.addEventListener('click', e => selectTip(e))
 custom_tip.addEventListener('keyup', e => {
+  if (e.keyCode == 9) return
+  if (e.keyCode == 13) e.preventDefault()
+  selectTip(e)
   tip_percent = parseFloat(e.target.value || 0) / 100
   calculateTip()
 })
@@ -75,6 +87,7 @@ function calculateTip(input=null) {
 
 const reset_btn = document.querySelector('.reset-btn')
 reset_btn.addEventListener('click', e => {
+  e.preventDefault()
   bill_input.value = ''
   deselectTips()
   custom_tip.value = ''
