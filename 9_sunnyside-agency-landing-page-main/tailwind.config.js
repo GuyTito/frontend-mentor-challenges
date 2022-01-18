@@ -19,6 +19,10 @@ module.exports = {
         serif: ["'Fraunces'", ...defaultTheme.fontFamily.serif],
         sans: ["'Barlow'", ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: {
+        'graphic-design': "url('./images/mobile/image-graphic-design.jpg')",
+        'header': "url('./images/mobile/image-header.jpg')",
+      },
     },
   },
   plugins: [],
