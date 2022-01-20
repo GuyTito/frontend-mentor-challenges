@@ -20,8 +20,9 @@ module.exports = {
         sans: ["'Barlow'", ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: {
-        'graphic-design': "url('./images/mobile/image-graphic-design.jpg')",
         'header': "url('./images/mobile/image-header.jpg')",
+        'header-d': "url('./images/desktop/image-header.jpg')",
+        'graphic-design': "url('./images/mobile/image-graphic-design.jpg')",
       },
     },
   },
