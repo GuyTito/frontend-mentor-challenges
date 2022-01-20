@@ -16,38 +16,29 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body class="text-lg">
-  <header class="bg-header bg-center bg-cover bg-no-repeat pb-32">
-    <nav class="mx-5 pt-8 flex justify-between">
+  <header class="bg-header md:bg-header-d bg-center bg-cover bg-no-repeat pb-32 md:pb-80 text-white">
+    <nav class="mx-5 md:mx-12 pt-8 md:pt-10 flex items-center justify-between">
       <div>
         <a href="#">
           <img src="./images/logo.svg" alt="logo">
         </a>
       </div>
 
-      <ul class="hidden">
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Services</a>
-        </li>
-        <li>
-          <a href="#">Projects</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
+      <div class="hidden md:inline-block space-x-12">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#" class="px-6 py-4 bg-white font-serif rounded-full text-Dark-blue">Contact</a>
+      </div>
 
-      <button>
+      <button class="md:hidden">
         <img src="./images/icon-hamburger.svg" alt="a hamburger icon">
       </button>
     </nav>
   
-    <div class="grid place-items-center">
-      <h1 class="text-white uppercase text-center flex flex-col tracking-[0.2em] leading-snug text-4xl mt-20 mb-16">
-        <span>We are</span>
-        <span>creatives</span>
+    <div class="grid place-items-center mt-20 md:mt-32">
+      <h1 class="uppercase text-center tracking-[0.2em] leading-snug text-4xl md:text-5xl mb-16 md:mb-28">
+        We are <br class="md:hidden"> creatives
       </h1>
       <img src="./images/icon-arrow-down.svg" alt="an arrow pointing down">
     </div>
