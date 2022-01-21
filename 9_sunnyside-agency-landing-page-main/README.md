@@ -21,15 +21,24 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Screenshot
+---
 
-![](./screenshot.png)
+### Screenshot
+<details>
+<summary>Screenshot</summary>
+
+![Screenshot of project](./screenshot.png)
+
+</details>
+
+---
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://sunny-page-fm.netlify.com)
+- [Solution](https://your-solution-url.com)
+- [Live Site](https://sunny-page-fm.netlify.com)
 
+---
 
 ### Built with
 
@@ -38,6 +47,8 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+
+---
 
 ## Author
 
