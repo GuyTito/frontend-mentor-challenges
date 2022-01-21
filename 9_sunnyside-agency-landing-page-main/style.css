@@ -430,6 +430,11 @@ h1, h2, h3{
   font-weight: 900;
 }
 
+a i:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 *, ::before, ::after{
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -537,10 +542,6 @@ h1, h2, h3{
   margin-bottom: 2.5rem;
 }
 
-.mb-24{
-  margin-bottom: 6rem;
-}
-
 .flex{
   display: flex;
 }
@@ -577,28 +578,8 @@ h1, h2, h3{
   width: 3rem;
 }
 
-.max-w-\[200px\]{
-  max-width: 200px;
-}
-
-.max-w-\[20px\]{
-  max-width: 20px;
-}
-
-.max-w-\[300px\]{
-  max-width: 300px;
-}
-
-.max-w-\[380px\]{
-  max-width: 380px;
-}
-
 .max-w-\[350px\]{
   max-width: 350px;
-}
-
-.max-w-none{
-  max-width: none;
 }
 
 .grow{
@@ -856,6 +837,23 @@ h1, h2, h3{
           text-decoration-line: underline;
 }
 
+.transition{
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:bg-white\/30:hover{
+  background-color: rgb(255 255 255 / 0.3);
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .peer:hover ~ .peer-hover\:bg-Yellow-primary{
   --tw-bg-opacity: 1;
   background-color: hsl(51 100% 49% / var(--tw-bg-opacity));
@@ -880,12 +878,12 @@ h1, h2, h3{
     margin-bottom: 7rem;
   }
 
-  .md\:mb-20{
-    margin-bottom: 5rem;
+  .md\:-ml-2{
+    margin-left: -0.5rem;
   }
 
-  .md\:mb-24{
-    margin-bottom: 6rem;
+  .md\:mb-20{
+    margin-bottom: 5rem;
   }
 
   .md\:mb-16{
@@ -956,35 +954,12 @@ h1, h2, h3{
     padding-bottom: 8rem;
   }
 
-  .md\:px-32{
-    padding-left: 8rem;
-    padding-right: 8rem;
-  }
-
-  .md\:px-20{
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
-  .md\:px-10{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
   .md\:pb-80{
     padding-bottom: 20rem;
   }
 
   .md\:pt-10{
     padding-top: 2.5rem;
-  }
-
-  .md\:pt-20{
-    padding-top: 5rem;
-  }
-
-  .md\:pt-28{
-    padding-top: 7rem;
   }
 
   .md\:pt-24{
@@ -1005,16 +980,6 @@ h1, h2, h3{
   .lg\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
-  }
-
-  .lg\:px-40{
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-
-  .lg\:px-32{
-    padding-left: 8rem;
-    padding-right: 8rem;
   }
 
   .lg\:px-28{
