@@ -24,6 +24,21 @@ module.exports = {
         'header-d': "url('./images/desktop/image-header.jpg')",
         'graphic-design': "url('./images/mobile/image-graphic-design.jpg')",
       },
+      animation: {
+        "slide-tr": "slide-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
+      },
+      keyframes: {
+        "slide-tr": {
+          "0%": {
+            opacity: 0,
+            transform: " scale(.75) translateX(-50%) translateY(-50%)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: " scale(1) translateX(-50%) translateY(0)",
+          }
+        },
+      },
     },
   },
   plugins: [],
