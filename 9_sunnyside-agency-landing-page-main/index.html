@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body class="text-lg">
-  <header class="bg-header md:bg-header-d bg-center bg-cover bg-no-repeat pb-32 md:pb-80 text-white">
+  <header class="bg-header md:bg-header-d bg-center bg-cover bg-no-repeat pb-32 md:pb-80 text-white relative">
     <nav class="mx-5 md:mx-12 pt-8 md:pt-10 flex items-center justify-between">
       <div>
         <a href="#">
@@ -30,9 +30,17 @@
         <a href="#">Projects</a>
         <a href="#" class="px-6 py-4 bg-white font-serif rounded-full text-Dark-blue transition hover:bg-white/30 hover:text-white">Contact</a>
       </div>
+      <div class="hidden md:hidden bg-white text-Very-dark-grayish-blue text-center absolute top-32 left-1/2 -translate-x-1/2 w-[90%] animate-slide-tr z-10" id="mobile-menu">
+        <div class="flex flex-col space-y-8 py-10">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+          <a href="#" class="py-2 mx-24 bg-Yellow-primary font-serif rounded-full text-Dark-blue transition hover:text-white">Contact</a>
+        </div>
+      </div>
 
       <button class="md:hidden">
-        <img src="./images/icon-hamburger.svg" alt="a hamburger icon">
+        <img src="./images/icon-hamburger.svg" alt="menu icon">
       </button>
     </nav>
   
@@ -40,7 +48,7 @@
       <h1 class="uppercase text-center tracking-[0.2em] leading-snug text-4xl md:text-5xl mb-16 md:mb-28">
         We are <br class="md:hidden"> creatives
       </h1>
-      <img src="./images/icon-arrow-down.svg" alt="an arrow pointing down">
+      <img src="./images/icon-arrow-down.svg" alt="down arrow" class="animate-bounce">
     </div>
   </header>
 
@@ -180,6 +188,12 @@
     </div>
   </footer>
 
-  
+  <script>
+    const btn = document.querySelector('button')
+    const mobile_menu = document.querySelector('#mobile-menu')
+    btn.addEventListener('click', (e) => {
+      mobile_menu.classList.toggle('hidden')
+    })
+  </script>
 </body>
 </html>
