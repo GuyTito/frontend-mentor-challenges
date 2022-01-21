@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://your-solution-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/responsive-landing-page-using-css-grid-flexbox-tailwindcss-aVBeJ34rQ)
 - [Live Site](https://sunny-page-fm.netlify.com)
 
 ---
