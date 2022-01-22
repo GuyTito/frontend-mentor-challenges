@@ -10,7 +10,7 @@ module.exports = {
         "Dark-gray": "hsl(0, 0%, 48%)",
       },
       fontFamily: {
-        serif : ["'Commissioner'", ...defaultTheme.fontFamily.serif],
+        sans : ["'Commissioner'", ...defaultTheme.fontFamily.sans],
       },
     },
   },
