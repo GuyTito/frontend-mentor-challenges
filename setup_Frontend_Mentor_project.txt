@@ -1,7 +1,8 @@
 setup Frontend Mentor project
 ------------------------------
 
-- init a challenge
+- init a repo for a challenge and give nice repo description with GitHub Desktop
+- update readme to reflect current state of project
 - update gitignore with ff
 node_modules
 notes.txt
@@ -13,3 +14,4 @@ package-lock.json
 - implement style guide
 - check up designs
 - code
+- Do this after launching website. update repo About section nicely on GitHub with tags and website
