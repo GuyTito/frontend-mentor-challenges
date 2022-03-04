@@ -2,7 +2,8 @@ setup Frontend Mentor project
 ------------------------------
 
 - remove "main" or "master" from project name
-- init a repo for a challenge and give nice repo description with GitHub Desktop
+- init a repo for the challenge and give nice repo description with GitHub Desktop
+- create 'dev' branch
 - update readme to reflect current state of project
 - update gitignore with ff
 node_modules
@@ -10,7 +11,8 @@ notes.txt
 package.json
 package-lock.json
 - merge with main
-- copy tailwind starter files into challenge project
+- switch to dev branch
+- copy tailwind starter files into challenge project folder
 - follow steps in notes.txt to setup tailwindcss
 - implement style guide
 - check up designs
