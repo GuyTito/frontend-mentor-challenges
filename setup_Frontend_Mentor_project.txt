@@ -1,5 +1,5 @@
-setup Frontend Mentor project
-------------------------------
+setup Frontend Mentor project (HTML-CSS-Vanilla JS)
+---------------------------------------------------
 
 - remove "main" or "master" from project name
 - init a repo for the challenge and give nice repo description with GitHub Desktop
